@@ -1,0 +1,16 @@
+a {
+  text-decoration: none;
+  color: currentcolor;
+}
+
+input {
+  border: none;
+}
+input:focus {
+  outline: none;
+}
+
+button {
+  border: none;
+  background-color: transparent;
+}/*# sourceMappingURL=reset.css.map */

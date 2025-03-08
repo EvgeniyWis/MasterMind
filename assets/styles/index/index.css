@@ -1,0 +1,36 @@
+@font-face {
+  font-family: "Alumni Sans SC";
+  src: url("../../fonts/AlumniSans-Regular.ttf") format("truetype");
+  src: url("../../fonts/AlumniSans-Light.ttf") format("truetype");
+  src: url("../../fonts/AlumniSans-Medium.ttf") format("truetype");
+  src: url("../../fonts/AlumniSans-ExtraLight.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Alumni Sans";
+  src: url("../../fonts/AlumniSans-Regular.ttf") format("truetype");
+  src: url("../../fonts/AlumniSans-Thin.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Inter";
+  src: url("../../fonts/Inter-ExtraLight.otf") format("opentype");
+}
+:root {
+  --font-family: "Alumni Sans SC", sans-serif;
+  --second-family: "Alumni Sans", sans-serif;
+  --third-family: "Inter", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-family);
+  background-image: url("../../images/mainBG.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+}/*# sourceMappingURL=index.css.map */
