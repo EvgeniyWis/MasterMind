@@ -1,0 +1,17 @@
+.video__wrapper {
+  position: relative;
+  display: flex;
+}
+.video__wrapper::after {
+  content: url("../../icons/video-arrow.svg");
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.video__wrapper__played::after {
+  display: none;
+}/*# sourceMappingURL=video.css.map */
