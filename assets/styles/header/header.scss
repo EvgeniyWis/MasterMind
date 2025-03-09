@@ -77,7 +77,7 @@ header {
       color: var(--color-white);
       cursor: pointer;
 
-      @media (min-width: $laptop-mediaquery-width) {
+      @media (min-width: $tablet-mediaquery-width) {
         &::after {
           content: "";
           display: block;
