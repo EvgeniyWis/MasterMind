@@ -24,12 +24,18 @@
   // Colors
   --color-white: #fff;
   --color-black: #000;
+  --color-black-secondary: #1212124d;
   --color-red: #ff1f00;
   --color-gray: #d9d9d9;
-  --color-gray-secondary: rgba(217, 217, 217, 0.23);
+  --color-gray-secondary: rgb(217 217 217 / 23%);
 
   // Transition
   --transition-duration-default: 0.3s;
+
+  // Z-indexes
+  --z-index-default: 0;
+  --z-index-header-burger-menu: 1;
+  --z-index-header-burger-menu-icon: 2;
 }
 
 // General styles
@@ -52,6 +58,7 @@ body {
   background-repeat: no-repeat;
   min-height: 100vh;
   padding: var(--padding-desktop-y) var(--padding-desktop-x);
+  position: relative;
 
   @media (max-width: $laptop-mediaquery-width) {
     padding: var(--padding-laptop-y) var(--padding-laptop-x);
