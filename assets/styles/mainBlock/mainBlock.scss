@@ -99,4 +99,24 @@
     top: 0;
     z-index: var(--z-index-bg);
   }
+
+  &__footer {
+    position: relative;
+    width: 100%;
+
+    &__caption {
+      font-weight: 500;
+      font-size: 90px;
+      line-height: 78%;
+      color: var(--color-white);
+    }
+
+    &__bg {
+      position: absolute;
+      z-index: var(--z-index-bg);
+      width: 100%;
+      object-fit: cover;
+      top: -20px;
+    }
+  }
 }

@@ -5,6 +5,7 @@ new Swiper("#mainBlock__leftCol", {
 
   pagination: {
     el: "#mainBlock__leftCol-swiper-pagination",
+    clickable: true,
   },
 });
 /* /Инициализация Swiper.js для блока mainBlock/ */
