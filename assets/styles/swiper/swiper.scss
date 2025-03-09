@@ -1,4 +1,4 @@
-@import "../scssVars/mediaQueries";
+@import '../scssVars/mediaQueries';
 
 .swiper-wrapper {
   z-index: var(--z-index-default);
@@ -22,9 +22,14 @@
   transition: var(--transition-duration-default) linear;
   transition-property: background-color, opacity;
 
-  @media (max-width: $mobile-mediaquery-width) {
+  @media (max-width: $tablet-mediaquery-width) {
     width: 10px;
     height: 10px;
+  }
+
+  @media (max-width: $mobile-mediaquery-width) {
+    width: 8px;
+    height: 8px;
   }
 }
 

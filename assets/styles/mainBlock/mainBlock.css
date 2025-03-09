@@ -160,7 +160,12 @@
 .mainBlock__footer {
   position: relative;
   width: 100%;
-  margin-bottom: 100px;
+  margin-bottom: 80px;
+}
+@media (max-width: 450px) {
+  .mainBlock__footer {
+    margin-bottom: 40px;
+  }
 }
 .mainBlock__footer__caption {
   font-weight: 500;

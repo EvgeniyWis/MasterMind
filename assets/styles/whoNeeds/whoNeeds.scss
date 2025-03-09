@@ -1,11 +1,32 @@
+@import '../scssVars/mediaQueries';
+
 .whoNeeds {
   margin-top: 140px;
   margin-bottom: 169px;
   gap: 181px;
 
+  @media (max-width: $tablet-mediaquery-width) {
+    margin-top: 0;
+    margin-bottom: 58px;
+    gap: 81px;
+  }
+
+  @media (max-width: $mobile-mediaquery-width) {
+    gap: 33px;
+    margin-bottom: 40px;
+  }
+
   &__wrapper {
     width: 100%;
     gap: 50px;
+
+    @media (max-width: $tablet-mediaquery-width) {
+      gap: 30px;
+    }
+
+    @media (max-width: $mobile-mediaquery-width) {
+      gap: 20px;
+    }
 
     * {
       line-height: 98%;
@@ -19,23 +40,38 @@
       align-items: center;
       gap: 25px;
       max-width: 100%;
+
+      @media (max-width: $mobile-mediaquery-width) {
+        gap: 15px;
+      }
     }
   }
 
   &__caption {
     font-weight: 400;
     font-size: 96px;
+
+    @media (max-width: $tablet-mediaquery-width) {
+      font-size: 32px;
+    }
+
+    @media (max-width: $mobile-mediaquery-width) {
+      font-size: 13px;
+    }
   }
 
   &__desc {
     font-weight: 200;
     font-size: 48px;
     width: 80%;
-  }
 
-  &__video {
-    height: 578px;
-    width: 100%;
-    border-radius: 39px;
+    @media (max-width: $tablet-mediaquery-width) {
+      font-size: 32px;
+      width: 100%;
+    }
+
+    @media (max-width: $mobile-mediaquery-width) {
+      font-size: 12px;
+    }
   }
 }

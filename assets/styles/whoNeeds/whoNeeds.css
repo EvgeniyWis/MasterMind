@@ -1,11 +1,35 @@
+/* Media Queries */
 .whoNeeds {
   margin-top: 140px;
   margin-bottom: 169px;
   gap: 181px;
 }
+@media (max-width: 768px) {
+  .whoNeeds {
+    margin-top: 0;
+    margin-bottom: 58px;
+    gap: 81px;
+  }
+}
+@media (max-width: 450px) {
+  .whoNeeds {
+    gap: 33px;
+    margin-bottom: 40px;
+  }
+}
 .whoNeeds__wrapper {
   width: 100%;
   gap: 50px;
+}
+@media (max-width: 768px) {
+  .whoNeeds__wrapper {
+    gap: 30px;
+  }
+}
+@media (max-width: 450px) {
+  .whoNeeds__wrapper {
+    gap: 20px;
+  }
 }
 .whoNeeds__wrapper * {
   line-height: 98%;
@@ -19,17 +43,38 @@
   gap: 25px;
   max-width: 100%;
 }
+@media (max-width: 450px) {
+  .whoNeeds__wrapper .swiper-slide {
+    gap: 15px;
+  }
+}
 .whoNeeds__caption {
   font-weight: 400;
   font-size: 96px;
+}
+@media (max-width: 768px) {
+  .whoNeeds__caption {
+    font-size: 32px;
+  }
+}
+@media (max-width: 450px) {
+  .whoNeeds__caption {
+    font-size: 13px;
+  }
 }
 .whoNeeds__desc {
   font-weight: 200;
   font-size: 48px;
   width: 80%;
 }
-.whoNeeds__video {
-  height: 578px;
-  width: 100%;
-  border-radius: 39px;
+@media (max-width: 768px) {
+  .whoNeeds__desc {
+    font-size: 32px;
+    width: 100%;
+  }
+}
+@media (max-width: 450px) {
+  .whoNeeds__desc {
+    font-size: 12px;
+  }
 }/*# sourceMappingURL=whoNeeds.css.map */

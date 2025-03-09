@@ -1,4 +1,4 @@
-@import "../scssVars/mediaQueries";
+@import '../scssVars/mediaQueries';
 
 .mainBlock {
   width: 100%;
@@ -164,7 +164,11 @@
   &__footer {
     position: relative;
     width: 100%;
-    margin-bottom: 100px;
+    margin-bottom: 80px;
+
+    @media (max-width: $mobile-mediaquery-width) {
+      margin-bottom: 40px;
+    }
 
     &__caption {
       font-weight: 500;

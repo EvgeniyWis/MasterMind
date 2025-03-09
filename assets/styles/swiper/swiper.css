@@ -21,10 +21,16 @@
   transition: var(--transition-duration-default) linear;
   transition-property: background-color, opacity;
 }
-@media (max-width: 450px) {
+@media (max-width: 768px) {
   .swiper-pagination-bullet {
     width: 10px;
     height: 10px;
+  }
+}
+@media (max-width: 450px) {
+  .swiper-pagination-bullet {
+    width: 8px;
+    height: 8px;
   }
 }
 

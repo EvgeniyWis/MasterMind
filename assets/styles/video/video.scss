@@ -1,10 +1,12 @@
+@import '../scssVars/mediaQueries';
+
 .video {
   &__wrapper {
     position: relative;
     display: flex;
 
     &::after {
-      content: url('../../icons/video-arrow.svg');
+      content: url('../../icons/video-arrow/desktop.svg');
       position: absolute;
       width: 100%;
       height: 100%;
@@ -12,11 +14,34 @@
       display: flex;
       justify-content: center;
       align-items: center;
+
+      @media (max-width: $tablet-mediaquery-width) {
+        content: url('../../icons/video-arrow/tablet.svg');
+      }
+
+      @media (max-width: $mobile-mediaquery-width) {
+        content: url('../../icons/video-arrow/mobile.svg');
+      }
     }
 
     &__played {
       &::after {
         display: none;
+      }
+    }
+
+    video {
+      height: 578px;
+      width: 100%;
+      border-radius: 39px;
+
+      @media (max-width: $tablet-mediaquery-width) {
+        height: 324px;
+      }
+
+      @media (max-width: $mobile-mediaquery-width) {
+        height: 132px;
+        border-radius: 21px;
       }
     }
   }
