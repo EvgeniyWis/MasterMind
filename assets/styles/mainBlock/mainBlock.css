@@ -10,16 +10,23 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: relative;
+}
+.mainBlock__leftCol {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   flex-direction: column;
   gap: 78px;
 }
-.mainBlock__wrapper .swiper-slide {
+.mainBlock__leftCol .swiper-slide {
   display: flex;
   flex-direction: column;
   text-transform: uppercase;
   color: var(--color-white);
 }
-.mainBlock__wrapper .swiper-slide * {
+.mainBlock__leftCol .swiper-slide * {
   font-weight: 500;
   line-height: 97%;
 }
@@ -72,4 +79,10 @@
 .mainBlock__desc {
   font-size: 48px;
   width: 35%;
+}
+.mainBlock__img {
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: var(--z-index-bg);
 }/*# sourceMappingURL=mainBlock.css.map */

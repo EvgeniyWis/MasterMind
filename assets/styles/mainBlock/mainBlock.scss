@@ -10,6 +10,14 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: relative;
+  }
+
+  &__leftCol {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     flex-direction: column;
     gap: 78px;
 
@@ -83,5 +91,12 @@
   &__desc {
     font-size: 48px;
     width: 35%;
+  }
+
+  &__img {
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: var(--z-index-bg);
   }
 }
