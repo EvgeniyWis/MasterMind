@@ -14,10 +14,17 @@
   font-family: "Inter";
   src: url("../../fonts/Inter-ExtraLight.otf") format("opentype");
 }
+/* Media Queries */
 :root {
   --font-family: "Alumni Sans SC", sans-serif;
   --second-family: "Alumni Sans", sans-serif;
   --third-family: "Inter", sans-serif;
+  --padding-desktop-y: 32px;
+  --padding-tablet-y: 19px;
+  --padding-mobile-y: 15px;
+  --padding-desktop-x: 50px;
+  --padding-tablet-x: 30px;
+  --padding-mobile-x: 20px;
 }
 
 * {
@@ -33,4 +40,15 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   min-height: 100vh;
+  padding: var(--padding-desktop-y) var(--padding-desktop-x);
+}
+@media (max-width: 768px) {
+  body {
+    padding: var(--padding-tablet-y) var(--padding-tablet-x);
+  }
+}
+@media (max-width: 320px) {
+  body {
+    padding: var(--padding-mobile-y) var(--padding-mobile-x);
+  }
 }/*# sourceMappingURL=index.css.map */

@@ -1,11 +1,23 @@
 // Imports
 @use "../fonts/fonts.scss" as *;
+@use "../scssVars/mediaQueries.scss" as *;
 
 // Variables
 :root {
+  // Fonts
   --font-family: "Alumni Sans SC", sans-serif;
   --second-family: "Alumni Sans", sans-serif;
   --third-family: "Inter", sans-serif;
+
+  // Padding-y
+  --padding-desktop-y: 32px;
+  --padding-tablet-y: 19px;
+  --padding-mobile-y: 15px;
+
+  // Padding-x
+  --padding-desktop-x: 50px;
+  --padding-tablet-x: 30px;
+  --padding-mobile-x: 20px;
 }
 
 // General styles
@@ -22,4 +34,13 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   min-height: 100vh;
+  padding: var(--padding-desktop-y) var(--padding-desktop-x);
+
+  @media (max-width: $tablet-mediaquery-width) {
+    padding: var(--padding-tablet-y) var(--padding-tablet-x);
+  }
+
+  @media (max-width: $mobile-mediaquery-width) {
+    padding: var(--padding-mobile-y) var(--padding-mobile-x);
+  }
 }
