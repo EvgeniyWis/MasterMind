@@ -1,6 +1,6 @@
 // Imports
-@use "../fonts/fonts.scss" as *;
-@use "../scssVars/mediaQueries.scss" as *;
+@import "../fonts/fonts";
+@import "../scssVars/mediaQueries";
 
 // Variables
 :root {
@@ -33,6 +33,7 @@
   --transition-duration-default: 0.3s;
 
   // Z-indexes
+  --z-index-hidden: -2;
   --z-index-bg: -1;
   --z-index-default: 0;
   --z-index-header-burger-menu: 1;
@@ -54,12 +55,13 @@ body {
 
 body {
   font-family: var(--font-family);
-  background-image: url("../../images/mainBG.jpg");
+  background-image: url("../../images/mainBG/desktop.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   min-height: 100vh;
   padding: var(--padding-desktop-y) var(--padding-desktop-x);
   position: relative;
+  overflow-y: hidden;
 
   @media (max-width: $laptop-mediaquery-width) {
     padding: var(--padding-laptop-y) var(--padding-laptop-x);
@@ -67,10 +69,12 @@ body {
 
   @media (max-width: $tablet-mediaquery-width) {
     padding: var(--padding-tablet-y) var(--padding-tablet-x);
+    background-image: url("../../images/mainBG/tablet.jpg");
   }
 
   @media (max-width: $mobile-mediaquery-width) {
     padding: var(--padding-mobile-y) var(--padding-mobile-x);
+    background-image: url("../../images/mainBG/mobile.jpg");
   }
 }
 
@@ -88,8 +92,20 @@ body {
   flex-direction: column;
 }
 
+.laptop-flex-column {
+  @media (max-width: $laptop-mediaquery-width) {
+    flex-direction: column;
+  }
+}
+
 .align-center {
   align-items: center;
+}
+
+.laptop-align-center {
+  @media (max-width: $laptop-mediaquery-width) {
+    align-items: center;
+  }
 }
 
 .justify-center {
@@ -97,6 +113,10 @@ body {
 }
 
 // Gap classes
+.gap-10 {
+  gap: 10px;
+}
+
 .gap-20 {
   gap: 20px;
 }

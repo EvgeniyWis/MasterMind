@@ -1,3 +1,5 @@
+@import "../scssVars/mediaQueries";
+
 .swiper-wrapper {
   z-index: var(--z-index-default);
 }
@@ -19,6 +21,11 @@
   opacity: 0.44;
   transition: var(--transition-duration-default) linear;
   transition-property: background-color, opacity;
+
+  @media (max-width: $mobile-mediaquery-width) {
+    width: 10px;
+    height: 10px;
+  }
 }
 
 .swiper-pagination-bullet-active {
