@@ -38,7 +38,7 @@ header {
   .header__menu {
     flex-direction: column;
     transition: linear var(--transition-duration-default);
-    transition-property: opacity, transform;
+    transition-property: opacity, transform, z-index;
     background-color: rgba(18, 18, 18, 0.3019607843);
     -webkit-backdrop-filter: blur(18.1px);
             backdrop-filter: blur(18.1px);

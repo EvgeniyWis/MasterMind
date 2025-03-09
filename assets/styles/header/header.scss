@@ -37,7 +37,7 @@ header {
     @media (max-width: $tablet-mediaquery-width) {
       flex-direction: column;
       transition: linear var(--transition-duration-default);
-      transition-property: opacity, transform;
+      transition-property: opacity, transform, z-index;
       background-color: #1212124d;
       backdrop-filter: blur(18.1px);
       position: absolute;
