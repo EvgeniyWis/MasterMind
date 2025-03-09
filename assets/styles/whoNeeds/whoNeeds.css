@@ -1,0 +1,30 @@
+.whoNeeds {
+  margin-top: 140px;
+  margin-bottom: 169px;
+  gap: 181px;
+}
+.whoNeeds__wrapper {
+  width: 100%;
+  gap: 50px;
+}
+.whoNeeds__wrapper * {
+  line-height: 98%;
+  text-align: center;
+  color: var(--color-white);
+}
+.whoNeeds__wrapper .swiper-slide {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 25px;
+  max-width: 100%;
+}
+.whoNeeds__caption {
+  font-weight: 400;
+  font-size: 96px;
+}
+.whoNeeds__desc {
+  font-weight: 200;
+  font-size: 48px;
+  width: 80%;
+}/*# sourceMappingURL=whoNeeds.css.map */
