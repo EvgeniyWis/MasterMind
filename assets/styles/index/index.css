@@ -48,6 +48,9 @@
   --padding-mobile-x: 20px;
   --color-white: #fff;
   --color-black: #000;
+  --color-red: #ff1f00;
+  --color-gray: #d9d9d9;
+  --color-gray-secondary: rgba(217, 217, 217, 0.23);
   --transition-duration-default: 0.3s;
 }
 
@@ -85,4 +88,28 @@ body {
   body {
     padding: var(--padding-mobile-y) var(--padding-mobile-x);
   }
+}
+
+.red {
+  color: var(--color-red);
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.gap-20 {
+  gap: 20px;
 }/*# sourceMappingURL=index.css.map */

@@ -1,0 +1,87 @@
+.mainBlock {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+
+  &__wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    gap: 78px;
+
+    .swiper-slide {
+      display: flex;
+      flex-direction: column;
+      text-transform: uppercase;
+      color: var(--color-white);
+
+      * {
+        font-weight: 500;
+        line-height: 97%;
+      }
+    }
+  }
+
+  &__buttons {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    position: relative;
+  }
+
+  &__leave-application {
+    &__desc {
+      font-weight: 400;
+      font-size: 30px;
+      line-height: 78%;
+      text-align: center;
+      color: var(--color-white);
+
+      &__wrapper {
+        border-radius: 29px;
+        padding: 15px;
+        padding-left: 30px;
+        background-color: var(--color-gray-secondary);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+
+    &__button {
+      border-radius: 29px;
+      background-color: var(--color-red);
+      padding: 27px 40px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 400;
+      font-size: 36px;
+      line-height: 78%;
+      color: var(--color-white);
+      transition: linear var(--transition-duration-default);
+      border: 1px solid transparent;
+      transition-property: background-color, color, border-color;
+      height: 83px;
+
+      &:hover {
+        background-color: var(--color-white);
+        color: var(--color-red);
+        border-color: var(--color-red);
+      }
+    }
+  }
+
+  &__caption {
+    font-size: 100px;
+  }
+
+  &__desc {
+    font-size: 48px;
+    width: 35%;
+  }
+}

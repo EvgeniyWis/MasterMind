@@ -13,6 +13,15 @@
     <link rel="stylesheet" href="assets/styles/reset/reset.css" />
     <link rel="stylesheet" href="assets/styles/index/index.css" />
     <link rel="stylesheet" href="assets/styles/header/header.css" />
+    <link rel="stylesheet" href="assets/styles/mainBlock/mainBlock.css" />
+
+    <!-- Swiper.js -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <link rel="stylesheet" href="assets/styles/swiper/swiper.css" />
 
     <!-- Favicon -->
     <link rel="icon" href="assets/images/logo.svg" type="image/svg+xml" />
@@ -27,7 +36,7 @@
   Предоставляю услуги по разработке Telegram ботом и сайтов с нуля.
   -->
   <body>
-    <!-- header -->
+    <!-- Header -->
     <header>
       <img
         width="125"
@@ -54,15 +63,144 @@
             <a class="header__menu__item">Вопросы и ответы</a>
           </nav>
 
-          <!-- TODO: заменить телефон на реальный -->
+          <!-- TODO: заменить телефон на реальный (во всех кнопках с tel) -->
           <a href="tel:+79999999999" class="header__menu__call">Связаться</a>
         </div>
       </div>
     </header>
-    <!-- header -->
+    <!-- /Header/ -->
+
+    <!-- Main -->
+    <main>
+      <section class="mainBlock">
+        <div class="mainBlock__wrapper" id="mainBlock__wrapper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <h2 class="mainBlock__caption">Совет директоров</h2>
+
+              <h1 class="mainBlock__caption red">MasterMind</h1>
+
+              <p class="mainBlock__desc">
+                Экспертная оценка ситуации и пошаговый план развития вашего
+                бизнеса
+              </p>
+            </div>
+
+            <div class="swiper-slide">
+              <h2 class="mainBlock__caption">Совет директоров</h2>
+
+              <h1 class="mainBlock__caption red">MasterMind</h1>
+
+              <p class="mainBlock__desc">
+                Экспертная оценка ситуации и пошаговый план развития вашего
+                бизнеса
+              </p>
+            </div>
+
+            <div class="swiper-slide">
+              <h2 class="mainBlock__caption">Совет директоров</h2>
+
+              <h1 class="mainBlock__caption red">MasterMind</h1>
+
+              <p class="mainBlock__desc">
+                Экспертная оценка ситуации и пошаговый план развития вашего
+                бизнеса
+              </p>
+            </div>
+
+            <div class="swiper-slide">
+              <h2 class="mainBlock__caption">Совет директоров</h2>
+
+              <h1 class="mainBlock__caption red">MasterMind</h1>
+
+              <p class="mainBlock__desc">
+                Экспертная оценка ситуации и пошаговый план развития вашего
+                бизнеса
+              </p>
+            </div>
+
+            <div class="swiper-slide">
+              <h2 class="mainBlock__caption">Совет директоров</h2>
+
+              <h1 class="mainBlock__caption red">MasterMind</h1>
+
+              <p class="mainBlock__desc">
+                Экспертная оценка ситуации и пошаговый план развития вашего
+                бизнеса
+              </p>
+            </div>
+
+            <div class="swiper-slide">
+              <h2 class="mainBlock__caption">Совет директоров</h2>
+
+              <h1 class="mainBlock__caption red">MasterMind</h1>
+
+              <p class="mainBlock__desc">
+                Экспертная оценка ситуации и пошаговый план развития вашего
+                бизнеса
+              </p>
+            </div>
+
+            <div class="swiper-slide">
+              <h2 class="mainBlock__caption">Совет директоров</h2>
+
+              <h1 class="mainBlock__caption red">MasterMind</h1>
+
+              <p class="mainBlock__desc">
+                Экспертная оценка ситуации и пошаговый план развития вашего
+                бизнеса
+              </p>
+            </div>
+          </div>
+
+          <div class="mainBlock__buttons">
+            <div class="flex gap-20">
+              <div class="flex flex-column align-center gap-20">
+                <div class="mainBlock__leave-application__desc__wrapper">
+                  <p class="mainBlock__leave-application__desc">
+                    Получите комплексную экспертную оценку <br />
+                    и пошаговый план развития Вашего бизнеса
+                    <span class="red">за 2 часа</span>
+                  </p>
+                </div>
+
+                <div
+                  class="swiper-pagination"
+                  id="mainBlock-swiper-pagination"
+                ></div>
+              </div>
+
+              <a
+                href="tel:+79999999999"
+                class="mainBlock__leave-application__button"
+              >
+                Оставить заявку
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- /Main/ -->
 
     <!-- Scripts -->
-    <script src="assets/scripts/header.js"></script>
+
+    <!-- Header -->
+    <script defer src="assets/scripts/header.js"></script>
+    <!-- /Header/ -->
+
+    <!-- Swiper.js -->
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"
+    ></script>
+    <!-- /Swiper.js/ -->
+
+    <!-- MainBlock -->
+    <script defer src="assets/scripts/mainBlock.js"></script>
+    <!-- /MainBlock/ -->
+
+    <!-- /Scripts/ -->
   </body>
   <!-- 
   Сайт разработан веб-специалистом Evgeniy_Wis:
