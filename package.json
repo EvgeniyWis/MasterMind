@@ -3,7 +3,8 @@
     "lint:js": "eslint \"**/*.js\"",
     "lint:js:fix": "eslint \"**/*.js\" --fix",
     "lint:scss": "npx stylelint \"**/*.scss\"",
-    "lint:scss:fix": "npx stylelint \"**/*.scss\" --fix"
+    "lint:scss:fix": "npx stylelint \"**/*.scss\" --fix",
+    "prettier": "npx prettier --write **/*.{js,json}"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3.3.0",

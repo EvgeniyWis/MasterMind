@@ -1,10 +1,10 @@
 /* Инициализация Swiper.js для блока mainBlock */
-new Swiper("#mainBlock__leftCol", {
-  direction: "horizontal",
+new Swiper('#mainBlock__leftCol', {
+  direction: 'horizontal',
   loop: true,
 
   pagination: {
-    el: "#mainBlock__leftCol-swiper-pagination",
+    el: '#mainBlock__leftCol-swiper-pagination',
     clickable: true,
   },
 });
