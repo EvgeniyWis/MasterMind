@@ -39,14 +39,16 @@
   --second-family: "Alumni Sans", sans-serif;
   --third-family: "Inter", sans-serif;
   --padding-desktop-y: 32px;
+  --padding-laptop-y: 24px;
   --padding-tablet-y: 19px;
   --padding-mobile-y: 15px;
   --padding-desktop-x: 50px;
+  --padding-laptop-x: 35px;
   --padding-tablet-x: 30px;
   --padding-mobile-x: 20px;
   --color-white: #fff;
   --color-black: #000;
-  --transition-duration-default: 0.4s;
+  --transition-duration-default: 0.3s;
 }
 
 * {
@@ -55,14 +57,24 @@
   padding: 0;
 }
 
+html,
+body {
+  overflow-x: hidden;
+  max-width: 100%;
+}
+
 body {
   font-family: var(--font-family);
   background-image: url("../../images/mainBG.jpg");
   background-size: cover;
-  background-position: center;
   background-repeat: no-repeat;
   min-height: 100vh;
   padding: var(--padding-desktop-y) var(--padding-desktop-x);
+}
+@media (max-width: 1200px) {
+  body {
+    padding: var(--padding-laptop-y) var(--padding-laptop-x);
+  }
 }
 @media (max-width: 768px) {
   body {

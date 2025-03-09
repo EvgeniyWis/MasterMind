@@ -36,21 +36,33 @@
         alt="Logo 'FLASH consulting'"
       />
 
-      <div class="header__menu">
-        <nav>
-          <!-- TODO: добавить скролл до нужных блоков-->
-          <a class="header__menu__item">Кому необходим</a>
-          <a class="header__menu__item">Этапы проведения</a>
-          <a class="header__menu__item">Об экспертах</a>
-          <a class="header__menu__item">Кейсы</a>
-          <a class="header__menu__item">Вопросы и ответы</a>
-        </nav>
+      <div class="header__wrapper">
+        <img
+          class="header__burger__icon"
+          src="assets/icons/burger-menu.svg"
+          alt="Burger menu Icon"
+          id="header__burger__icon"
+        />
 
-        <!-- TODO: заменить телефон на реальный -->
-        <a href="tel:+79999999999" class="header__menu__call">Связаться</a>
+        <div id="header__menu" class="header__menu">
+          <nav>
+            <!-- TODO: добавить скролл до нужных блоков-->
+            <a class="header__menu__item">Кому необходим</a>
+            <a class="header__menu__item">Этапы проведения</a>
+            <a class="header__menu__item">Об экспертах</a>
+            <a class="header__menu__item">Кейсы</a>
+            <a class="header__menu__item">Вопросы и ответы</a>
+          </nav>
+
+          <!-- TODO: заменить телефон на реальный -->
+          <a href="tel:+79999999999" class="header__menu__call">Связаться</a>
+        </div>
       </div>
     </header>
     <!-- header -->
+
+    <!-- Scripts -->
+    <script src="assets/scripts/header.js"></script>
   </body>
   <!-- 
   Сайт разработан веб-специалистом Evgeniy_Wis:
