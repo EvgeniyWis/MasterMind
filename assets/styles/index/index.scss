@@ -1,13 +1,13 @@
 // Imports
-@import "../fonts/fonts";
-@import "../scssVars/mediaQueries";
+@import '../fonts/fonts';
+@import '../scssVars/mediaQueries';
 
 // Variables
 :root {
   // Fonts
-  --font-family: "Alumni Sans SC", sans-serif;
-  --second-family: "Alumni Sans", sans-serif;
-  --third-family: "Inter", sans-serif;
+  --font-family: 'Alumni Sans SC', sans-serif;
+  --second-family: 'Alumni Sans', sans-serif;
+  --third-family: 'Inter', sans-serif;
 
   // Padding-y
   --padding-desktop-y: 32px;
@@ -28,6 +28,7 @@
   --color-red: #ff1f00;
   --color-gray: #d9d9d9;
   --color-gray-secondary: rgb(217 217 217 / 23%);
+  --color-gray-third: #b0b0b0;
 
   // Transition
   --transition-duration-default: 0.3s;
@@ -55,7 +56,7 @@ body {
 
 body {
   font-family: var(--font-family);
-  background-image: url("../../images/mainBG/desktop.jpg");
+  background-image: url('../../images/mainBG/desktop.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   min-height: 100vh;
@@ -69,12 +70,12 @@ body {
 
   @media (max-width: $tablet-mediaquery-width) {
     padding: var(--padding-tablet-y) var(--padding-tablet-x);
-    background-image: url("../../images/mainBG/tablet.jpg");
+    background-image: url('../../images/mainBG/tablet.jpg');
   }
 
   @media (max-width: $mobile-mediaquery-width) {
     padding: var(--padding-mobile-y) var(--padding-mobile-x);
-    background-image: url("../../images/mainBG/mobile.jpg");
+    background-image: url('../../images/mainBG/mobile.jpg');
   }
 }
 

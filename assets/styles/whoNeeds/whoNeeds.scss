@@ -74,4 +74,25 @@
       font-size: 12px;
     }
   }
+
+  &__weAreTrusted {
+    &__caption {
+      font-weight: 400;
+      font-size: 64px;
+      line-height: 105%;
+      color: var(--color-white);
+      text-transform: uppercase;
+    }
+
+    &__desc {
+      font-weight: 400;
+      font-size: 32px;
+      line-height: 105%;
+      text-transform: lowercase;
+      text-align: center;
+      color: var(--color-gray-third);
+      width: 70%;
+      margin-top: 20px;
+    }
+  }
 }

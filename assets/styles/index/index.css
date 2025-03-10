@@ -52,6 +52,7 @@
   --color-red: #ff1f00;
   --color-gray: #d9d9d9;
   --color-gray-secondary: rgb(217 217 217 / 23%);
+  --color-gray-third: #b0b0b0;
   --transition-duration-default: 0.3s;
   --z-index-hidden: -2;
   --z-index-bg: -1;
