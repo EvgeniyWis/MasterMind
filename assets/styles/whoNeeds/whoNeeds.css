@@ -2,19 +2,29 @@
 .whoNeeds {
   margin-top: 140px;
   margin-bottom: 169px;
-  gap: 181px;
 }
 @media (max-width: 768px) {
   .whoNeeds {
     margin-top: 0;
     margin-bottom: 58px;
-    gap: 81px;
   }
 }
 @media (max-width: 450px) {
   .whoNeeds {
-    gap: 33px;
     margin-bottom: 40px;
+  }
+}
+.whoNeeds__block {
+  gap: 181px;
+}
+@media (max-width: 768px) {
+  .whoNeeds__block {
+    gap: 81px;
+  }
+}
+@media (max-width: 450px) {
+  .whoNeeds__block {
+    gap: 33px;
   }
 }
 .whoNeeds__wrapper {
@@ -78,12 +88,62 @@
     font-size: 12px;
   }
 }
+.whoNeeds__weAreTrusted {
+  margin-top: 169px;
+}
+@media (max-width: 1400px) {
+  .whoNeeds__weAreTrusted {
+    margin-top: 58px;
+  }
+}
+@media (max-width: 450px) {
+  .whoNeeds__weAreTrusted {
+    margin-top: 40px;
+  }
+}
 .whoNeeds__weAreTrusted__caption {
   font-weight: 400;
   font-size: 64px;
   line-height: 105%;
   color: var(--color-white);
   text-transform: uppercase;
+}
+@media (max-width: 1400px) {
+  .whoNeeds__weAreTrusted__caption {
+    font-size: 40px;
+  }
+}
+@media (max-width: 450px) {
+  .whoNeeds__weAreTrusted__caption {
+    font-size: 20px;
+  }
+}
+.whoNeeds__weAreTrusted__logos {
+  width: 70%;
+  height: 70%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center center;
+     object-position: center center;
+}
+@media (max-width: 1400px) {
+  .whoNeeds__weAreTrusted__logos {
+    width: 75%;
+    height: 75%;
+    margin-top: 30px;
+  }
+}
+@media (max-width: 768px) {
+  .whoNeeds__weAreTrusted__logos {
+    margin-top: 20px;
+  }
+}
+@media (max-width: 450px) {
+  .whoNeeds__weAreTrusted__logos {
+    margin-top: 5px;
+    width: 100%;
+    height: 100%;
+  }
 }
 .whoNeeds__weAreTrusted__desc {
   font-weight: 400;
@@ -94,4 +154,21 @@
   color: var(--color-gray-third);
   width: 70%;
   margin-top: 20px;
+}
+@media (max-width: 1400px) {
+  .whoNeeds__weAreTrusted__desc {
+    font-size: 20px;
+  }
+}
+@media (max-width: 768px) {
+  .whoNeeds__weAreTrusted__desc {
+    margin-top: 10px;
+  }
+}
+@media (max-width: 450px) {
+  .whoNeeds__weAreTrusted__desc {
+    font-size: 13px;
+    width: 110%;
+    margin-top: 5px;
+  }
 }/*# sourceMappingURL=whoNeeds.css.map */
