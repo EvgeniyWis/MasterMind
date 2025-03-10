@@ -1,0 +1,116 @@
+.mastermindSteps {
+  &__caption {
+    font-weight: 500;
+    font-size: 100px;
+    line-height: 78%;
+    color: var(--color-white);
+    margin-top: 200px;
+  }
+
+  &__wrapper {
+    $width: 1150px;
+
+    margin-top: 120px;
+    width: $width;
+    position: relative;
+    height: 2000px;
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: -16%;
+      left: 11%;
+      height: 100%;
+      width: $width - 200px;
+      background-image: url('../../images/mastermindStepsBG.svg');
+      background-repeat: no-repeat;
+      background-size: cover;
+      z-index: var(--z-index-bg);
+    }
+  }
+
+  &__item {
+    &__caption {
+      font-family: var(--second-family);
+      font-weight: 400;
+      font-size: 40px;
+      color: var(--color-gray-fourth);
+    }
+
+    &__content {
+      background: var(--color-black);
+      height: 108px;
+      width: 488px;
+      border-radius: 0 26px 26px;
+      position: relative;
+
+      &__text {
+        font-family: var(--second-family);
+        font-weight: 131;
+        font-size: 48px;
+        line-height: 103%;
+        color: var(--color-gray-fourth);
+        text-align: center;
+      }
+
+      &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        width: 28px;
+        height: 100%;
+        background: linear-gradient(255deg, #ff1f00 2.36%, #991200 100%);
+      }
+    }
+
+    &__right {
+      margin-top: 15px;
+      align-self: flex-end;
+
+      &__second {
+        margin-top: 70px;
+      }
+
+      &__third {
+        margin-top: 30px;
+      }
+
+      .mastermindSteps__item__caption {
+        text-align: right;
+      }
+
+      .mastermindSteps__item__content::before {
+        right: 0;
+        border-radius: 0 0 26px;
+      }
+
+      &__last {
+        .mastermindSteps__item__content {
+          width: 700px;
+          height: 120px;
+        }
+      }
+    }
+
+    &__left {
+      margin-top: 115px;
+
+      .mastermindSteps__item__content::before {
+        left: 0;
+        border-radius: 0 0 0 26px;
+      }
+
+      &__third {
+        margin-top: 150px;
+      }
+
+      &__fourth {
+        margin-top: 90px;
+      }
+    }
+
+    &__first {
+      margin-top: 0;
+    }
+  }
+}
