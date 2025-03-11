@@ -12,6 +12,10 @@
       font-size: 48px;
       margin-top: 0;
     }
+
+    @media (max-width: $tablet-mediaquery-width) {
+      font-size: 20px;
+    }
   }
 
   &__wrapper {
@@ -25,6 +29,12 @@
       width: 650px;
       height: 1230px;
       margin-top: 100px;
+    }
+
+    @media (max-width: $tablet-mediaquery-width) {
+      width: 170px;
+      height: 540px;
+      margin-top: 40px;
     }
 
     &::before {
@@ -44,6 +54,12 @@
         width: calc(100% - 130px);
         top: -14%;
       }
+
+      @media (max-width: $tablet-mediaquery-width) {
+        background-image: url('../../images/mastermindStepsBG/tablet.svg');
+        width: calc(100% + 50px);
+        left: -20%;
+      }
     }
   }
 
@@ -56,6 +72,10 @@
 
       @media (max-width: $laptop-mediaquery-width) {
         font-size: 32px;
+      }
+
+      @media (max-width: $tablet-mediaquery-width) {
+        font-size: 15px;
       }
     }
 
@@ -71,6 +91,12 @@
         height: 70px;
       }
 
+      @media (max-width: $tablet-mediaquery-width) {
+        border-radius: 0 10px 10px;
+        width: 116px;
+        height: 35px;
+      }
+
       &__text {
         font-family: var(--second-family);
         font-weight: 131;
@@ -82,6 +108,10 @@
 
         @media (max-width: $laptop-mediaquery-width) {
           font-size: 32px;
+        }
+
+        @media (max-width: $tablet-mediaquery-width) {
+          font-size: 15px;
         }
       }
 
@@ -96,6 +126,10 @@
         @media (max-width: $laptop-mediaquery-width) {
           width: 16px;
         }
+
+        @media (max-width: $tablet-mediaquery-width) {
+          width: 7px;
+        }
       }
     }
 
@@ -104,17 +138,29 @@
       align-self: flex-end;
 
       @media (max-width: $laptop-mediaquery-width) {
-        margin-top: 0;
+        margin-top: 20px;
         position: relative;
         right: -50px;
       }
 
+      @media (max-width: $tablet-mediaquery-width) {
+        margin-top: -5px;
+      }
+
       &__second {
         margin-top: 60px;
+
+        @media (max-width: $tablet-mediaquery-width) {
+          margin-top: 5px;
+        }
       }
 
       &__third {
         margin-top: 20px;
+
+        @media (max-width: $tablet-mediaquery-width) {
+          margin-top: 0;
+        }
       }
 
       .mastermindSteps__item__caption {
@@ -127,9 +173,7 @@
       }
 
       &__last {
-        @media (max-width: $laptop-mediaquery-width) {
-          margin-top: 40px;
-        }
+        margin-top: 40px;
 
         .mastermindSteps__item__content {
           width: 700px;
@@ -137,6 +181,11 @@
 
           @media (max-width: $laptop-mediaquery-width) {
             width: 400px;
+          }
+
+          @media (max-width: $tablet-mediaquery-width) {
+            width: 200px;
+            height: 50px;
           }
         }
       }
@@ -151,6 +200,10 @@
         left: -50px;
       }
 
+      @media (max-width: $tablet-mediaquery-width) {
+        margin-top: 20px;
+      }
+
       .mastermindSteps__item__content::before {
         left: 0;
         border-radius: 0 0 0 26px;
@@ -162,6 +215,10 @@
         @media (max-width: $laptop-mediaquery-width) {
           margin-top: 80px;
         }
+
+        @media (max-width: $tablet-mediaquery-width) {
+          margin-top: 30px;
+        }
       }
 
       &__fourth {
@@ -169,6 +226,10 @@
 
         @media (max-width: $laptop-mediaquery-width) {
           margin-top: 40px;
+        }
+
+        @media (max-width: $tablet-mediaquery-width) {
+          margin-top: 10px;
         }
       }
     }
@@ -180,6 +241,10 @@
 
   &__video {
     margin-top: 100px;
+
+    @media (max-width: $tablet-mediaquery-width) {
+      margin-top: 50px;
+    }
   }
 
   &__button {
@@ -187,6 +252,13 @@
 
     @media (max-width: $laptop-mediaquery-width) {
       margin-top: 100px;
+    }
+
+    @media (max-width: $tablet-mediaquery-width) {
+      font-size: 24px;
+      height: 38px;
+      margin-top: 70px;
+      padding: 9px;
     }
   }
 }

@@ -12,6 +12,11 @@
     margin-top: 0;
   }
 }
+@media (max-width: 768px) {
+  .mastermindSteps__caption {
+    font-size: 20px;
+  }
+}
 .mastermindSteps__wrapper {
   margin-top: 120px;
   width: 1150px;
@@ -24,6 +29,13 @@
     width: 650px;
     height: 1230px;
     margin-top: 100px;
+  }
+}
+@media (max-width: 768px) {
+  .mastermindSteps__wrapper {
+    width: 170px;
+    height: 540px;
+    margin-top: 40px;
   }
 }
 .mastermindSteps__wrapper::before {
@@ -45,6 +57,13 @@
     top: -14%;
   }
 }
+@media (max-width: 768px) {
+  .mastermindSteps__wrapper::before {
+    background-image: url("../../images/mastermindStepsBG/tablet.svg");
+    width: calc(100% + 50px);
+    left: -20%;
+  }
+}
 .mastermindSteps__item__caption {
   font-family: var(--second-family);
   font-weight: 400;
@@ -54,6 +73,11 @@
 @media (max-width: 1400px) {
   .mastermindSteps__item__caption {
     font-size: 32px;
+  }
+}
+@media (max-width: 768px) {
+  .mastermindSteps__item__caption {
+    font-size: 15px;
   }
 }
 .mastermindSteps__item__content {
@@ -67,6 +91,13 @@
   .mastermindSteps__item__content {
     width: 276px;
     height: 70px;
+  }
+}
+@media (max-width: 768px) {
+  .mastermindSteps__item__content {
+    border-radius: 0 10px 10px;
+    width: 116px;
+    height: 35px;
   }
 }
 .mastermindSteps__item__content__text {
@@ -83,6 +114,11 @@
     font-size: 32px;
   }
 }
+@media (max-width: 768px) {
+  .mastermindSteps__item__content__text {
+    font-size: 15px;
+  }
+}
 .mastermindSteps__item__content::before {
   content: "";
   position: absolute;
@@ -96,22 +132,42 @@
     width: 16px;
   }
 }
+@media (max-width: 768px) {
+  .mastermindSteps__item__content::before {
+    width: 7px;
+  }
+}
 .mastermindSteps__item__right {
   margin-top: 15px;
   align-self: flex-end;
 }
 @media (max-width: 1400px) {
   .mastermindSteps__item__right {
-    margin-top: 0;
+    margin-top: 20px;
     position: relative;
     right: -50px;
+  }
+}
+@media (max-width: 768px) {
+  .mastermindSteps__item__right {
+    margin-top: -5px;
   }
 }
 .mastermindSteps__item__right__second {
   margin-top: 60px;
 }
+@media (max-width: 768px) {
+  .mastermindSteps__item__right__second {
+    margin-top: 5px;
+  }
+}
 .mastermindSteps__item__right__third {
   margin-top: 20px;
+}
+@media (max-width: 768px) {
+  .mastermindSteps__item__right__third {
+    margin-top: 0;
+  }
 }
 .mastermindSteps__item__right .mastermindSteps__item__caption {
   text-align: right;
@@ -120,10 +176,8 @@
   right: 0;
   border-radius: 0 0 26px;
 }
-@media (max-width: 1400px) {
-  .mastermindSteps__item__right__last {
-    margin-top: 40px;
-  }
+.mastermindSteps__item__right__last {
+  margin-top: 40px;
 }
 .mastermindSteps__item__right__last .mastermindSteps__item__content {
   width: 700px;
@@ -134,6 +188,12 @@
     width: 400px;
   }
 }
+@media (max-width: 768px) {
+  .mastermindSteps__item__right__last .mastermindSteps__item__content {
+    width: 200px;
+    height: 50px;
+  }
+}
 .mastermindSteps__item__left {
   margin-top: 115px;
 }
@@ -142,6 +202,11 @@
     margin-top: 70px;
     position: relative;
     left: -50px;
+  }
+}
+@media (max-width: 768px) {
+  .mastermindSteps__item__left {
+    margin-top: 20px;
   }
 }
 .mastermindSteps__item__left .mastermindSteps__item__content::before {
@@ -156,6 +221,11 @@
     margin-top: 80px;
   }
 }
+@media (max-width: 768px) {
+  .mastermindSteps__item__left__third {
+    margin-top: 30px;
+  }
+}
 .mastermindSteps__item__left__fourth {
   margin-top: 90px;
 }
@@ -164,11 +234,21 @@
     margin-top: 40px;
   }
 }
+@media (max-width: 768px) {
+  .mastermindSteps__item__left__fourth {
+    margin-top: 10px;
+  }
+}
 .mastermindSteps__item__first {
   margin-top: 0;
 }
 .mastermindSteps__video {
   margin-top: 100px;
+}
+@media (max-width: 768px) {
+  .mastermindSteps__video {
+    margin-top: 50px;
+  }
 }
 .mastermindSteps__button {
   margin-top: 200px;
@@ -176,5 +256,13 @@
 @media (max-width: 1400px) {
   .mastermindSteps__button {
     margin-top: 100px;
+  }
+}
+@media (max-width: 768px) {
+  .mastermindSteps__button {
+    font-size: 24px;
+    height: 38px;
+    margin-top: 70px;
+    padding: 9px;
   }
 }/*# sourceMappingURL=mastermindSteps.css.map */
