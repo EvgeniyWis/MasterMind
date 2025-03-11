@@ -143,7 +143,7 @@
 }
 @media (max-width: 1400px) {
   .mastermindSteps__item__right {
-    margin-top: 20px;
+    margin-top: 10px;
     position: relative;
     right: -50px;
   }
@@ -156,13 +156,23 @@
 .mastermindSteps__item__right__second {
   margin-top: 60px;
 }
+@media (max-width: 1400px) {
+  .mastermindSteps__item__right__second {
+    margin-top: 30px;
+  }
+}
 @media (max-width: 768px) {
   .mastermindSteps__item__right__second {
     margin-top: 5px;
   }
 }
 .mastermindSteps__item__right__third {
-  margin-top: 20px;
+  margin-top: 40px;
+}
+@media (max-width: 1400px) {
+  .mastermindSteps__item__right__third {
+    margin-top: 20px;
+  }
 }
 @media (max-width: 768px) {
   .mastermindSteps__item__right__third {
@@ -218,7 +228,7 @@
 }
 @media (max-width: 1400px) {
   .mastermindSteps__item__left__third {
-    margin-top: 80px;
+    margin-top: 90px;
   }
 }
 @media (max-width: 768px) {
@@ -241,6 +251,16 @@
 }
 .mastermindSteps__item__first {
   margin-top: 0;
+}
+@media (max-width: 1400px) {
+  .mastermindSteps__item__first {
+    margin-top: 30px;
+  }
+}
+@media (max-width: 768px) {
+  .mastermindSteps__item__first {
+    margin-top: 10px;
+  }
 }
 .mastermindSteps__video {
   margin-top: 100px;
