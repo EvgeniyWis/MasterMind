@@ -100,44 +100,4 @@ body {
     padding: var(--padding-mobile-y) var(--padding-mobile-x);
     background-image: url("../../images/mainBG/mobile.jpg");
   }
-}
-
-.red {
-  color: var(--color-red);
-}
-
-.flex {
-  display: flex;
-}
-
-.flex-column {
-  flex-direction: column;
-}
-
-@media (max-width: 1400px) {
-  .laptop-flex-column {
-    flex-direction: column;
-  }
-}
-
-.align-center {
-  align-items: center;
-}
-
-@media (max-width: 1400px) {
-  .laptop-align-center {
-    align-items: center;
-  }
-}
-
-.justify-center {
-  justify-content: center;
-}
-
-.gap-10 {
-  gap: 10px;
-}
-
-.gap-20 {
-  gap: 20px;
 }/*# sourceMappingURL=index.css.map */

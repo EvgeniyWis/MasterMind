@@ -1,0 +1,75 @@
+@import '../scssVars/mediaQueries';
+
+// Color classes
+.red {
+  color: var(--color-red);
+}
+
+// Flex classes
+.flex {
+  display: flex;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.laptop-flex-column {
+  @media (max-width: $laptop-mediaquery-width) {
+    flex-direction: column;
+  }
+}
+
+.align-center {
+  align-items: center;
+}
+
+.laptop-align-center {
+  @media (max-width: $laptop-mediaquery-width) {
+    align-items: center;
+  }
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+// Gap classes
+.gap-10 {
+  gap: 10px;
+}
+
+.gap-20 {
+  gap: 20px;
+}
+
+// UI-Kit components classes
+.red-button {
+  border-radius: 29px;
+  background-color: var(--color-red);
+  padding: 27px 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 78%;
+  color: var(--color-white);
+  transition: linear var(--transition-duration-default);
+  border: 1px solid transparent;
+  transition-property: background-color, color, border-color;
+  height: 83px;
+  white-space: nowrap;
+
+  &:hover {
+    background-color: var(--color-white);
+    color: var(--color-red);
+    border-color: var(--color-red);
+  }
+
+  @media (max-width: $mobile-mediaquery-width) {
+    border-radius: 13px;
+    height: 53px;
+    font-size: 20px;
+  }
+}
