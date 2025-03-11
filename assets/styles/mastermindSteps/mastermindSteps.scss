@@ -1,3 +1,5 @@
+@import '../scssVars/mediaQueries';
+
 .mastermindSteps {
   &__caption {
     font-weight: 500;
@@ -5,15 +7,25 @@
     line-height: 78%;
     color: var(--color-white);
     margin-top: 200px;
+
+    @media (max-width: $laptop-mediaquery-width) {
+      font-size: 48px;
+      margin-top: 0;
+    }
   }
 
   &__wrapper {
-    $width: 1150px;
-
     margin-top: 120px;
-    width: $width;
+    width: 1150px;
     position: relative;
     height: 2000px;
+    overflow: visible;
+
+    @media (max-width: $laptop-mediaquery-width) {
+      width: 650px;
+      height: 1230px;
+      margin-top: 100px;
+    }
 
     &::before {
       content: '';
@@ -21,11 +33,17 @@
       top: -16%;
       left: 11%;
       height: 100%;
-      width: $width - 200px;
-      background-image: url('../../images/mastermindStepsBG.svg');
+      width: calc(100% - 200px);
+      background-image: url('../../images/mastermindStepsBG/desktop.svg');
       background-repeat: no-repeat;
       background-size: cover;
       z-index: var(--z-index-bg);
+
+      @media (max-width: $laptop-mediaquery-width) {
+        background-image: url('../../images/mastermindStepsBG/laptop.svg');
+        width: calc(100% - 130px);
+        top: -14%;
+      }
     }
   }
 
@@ -35,6 +53,10 @@
       font-weight: 400;
       font-size: 40px;
       color: var(--color-gray-fourth);
+
+      @media (max-width: $laptop-mediaquery-width) {
+        font-size: 32px;
+      }
     }
 
     &__content {
@@ -44,6 +66,11 @@
       border-radius: 0 26px 26px;
       position: relative;
 
+      @media (max-width: $laptop-mediaquery-width) {
+        width: 276px;
+        height: 70px;
+      }
+
       &__text {
         font-family: var(--second-family);
         font-weight: 131;
@@ -51,6 +78,11 @@
         line-height: 103%;
         color: var(--color-gray-fourth);
         text-align: center;
+        width: 85%;
+
+        @media (max-width: $laptop-mediaquery-width) {
+          font-size: 32px;
+        }
       }
 
       &::before {
@@ -60,6 +92,10 @@
         width: 28px;
         height: 100%;
         background: linear-gradient(255deg, #ff1f00 2.36%, #991200 100%);
+
+        @media (max-width: $laptop-mediaquery-width) {
+          width: 16px;
+        }
       }
     }
 
@@ -67,12 +103,18 @@
       margin-top: 15px;
       align-self: flex-end;
 
+      @media (max-width: $laptop-mediaquery-width) {
+        margin-top: 0;
+        position: relative;
+        right: -50px;
+      }
+
       &__second {
-        margin-top: 70px;
+        margin-top: 60px;
       }
 
       &__third {
-        margin-top: 30px;
+        margin-top: 20px;
       }
 
       .mastermindSteps__item__caption {
@@ -85,15 +127,29 @@
       }
 
       &__last {
+        @media (max-width: $laptop-mediaquery-width) {
+          margin-top: 40px;
+        }
+
         .mastermindSteps__item__content {
           width: 700px;
           height: 120px;
+
+          @media (max-width: $laptop-mediaquery-width) {
+            width: 400px;
+          }
         }
       }
     }
 
     &__left {
       margin-top: 115px;
+
+      @media (max-width: $laptop-mediaquery-width) {
+        margin-top: 70px;
+        position: relative;
+        left: -50px;
+      }
 
       .mastermindSteps__item__content::before {
         left: 0;
@@ -102,10 +158,18 @@
 
       &__third {
         margin-top: 150px;
+
+        @media (max-width: $laptop-mediaquery-width) {
+          margin-top: 80px;
+        }
       }
 
       &__fourth {
         margin-top: 90px;
+
+        @media (max-width: $laptop-mediaquery-width) {
+          margin-top: 40px;
+        }
       }
     }
 
@@ -120,5 +184,9 @@
 
   &__button {
     margin-top: 200px;
+
+    @media (max-width: $laptop-mediaquery-width) {
+      margin-top: 100px;
+    }
   }
 }

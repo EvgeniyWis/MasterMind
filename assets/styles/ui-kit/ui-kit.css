@@ -61,6 +61,11 @@
   color: var(--color-red);
   border-color: var(--color-red);
 }
+@media (max-width: 1400px) {
+  .red-button {
+    font-size: 36px;
+  }
+}
 @media (max-width: 450px) {
   .red-button {
     border-radius: 13px;
