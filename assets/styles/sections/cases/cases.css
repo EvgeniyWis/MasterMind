@@ -5,4 +5,36 @@
   align-items: center;
   gap: 100px;
   margin-top: 177px;
+}
+.cases__item__name {
+  font-weight: 400;
+  font-size: 64px;
+  line-height: 105%;
+  text-align: justify;
+  color: var(--color-white);
+}
+.cases__item__desc {
+  font-weight: 200;
+  font-size: 36px;
+  line-height: 105%;
+  text-transform: capitalize;
+  color: var(--color-gray-fifth);
+  margin-top: 30px;
+}
+.cases__item__more {
+  width: -moz-fit-content;
+  width: fit-content;
+  font-weight: 200;
+  font-size: 36px;
+  line-height: 105%;
+  text-decoration: underline;
+  -webkit-text-decoration-skip-ink: none;
+          text-decoration-skip-ink: none;
+  text-align: justify;
+  color: var(--color-white);
+  margin-top: 30px;
+  transition: text-shadow linear var(--transition-duration-default);
+}
+.cases__item__more:hover {
+  text-shadow: 0 0 20px var(--color-white);
 }/*# sourceMappingURL=cases.css.map */

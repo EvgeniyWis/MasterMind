@@ -9,5 +9,38 @@
   }
 
   &__item {
+    &__name {
+      font-weight: 400;
+      font-size: 64px;
+      line-height: 105%;
+      text-align: justify;
+      color: var(--color-white);
+    }
+
+    &__desc {
+      font-weight: 200;
+      font-size: 36px;
+      line-height: 105%;
+      text-transform: capitalize;
+      color: var(--color-gray-fifth);
+      margin-top: 30px;
+    }
+
+    &__more {
+      width: fit-content;
+      font-weight: 200;
+      font-size: 36px;
+      line-height: 105%;
+      text-decoration: underline;
+      text-decoration-skip-ink: none;
+      text-align: justify;
+      color: var(--color-white);
+      margin-top: 30px;
+      transition: text-shadow linear var(--transition-duration-default);
+
+      &:hover {
+        text-shadow: 0 0 20px var(--color-white);
+      }
+    }
   }
 }
