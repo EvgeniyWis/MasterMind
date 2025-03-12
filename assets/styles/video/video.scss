@@ -6,7 +6,7 @@
     display: flex;
 
     &::after {
-      content: url('../../icons/video-arrow/desktop.svg');
+      content: url('../../icons/video/arrow/desktop.svg');
       position: absolute;
       width: 100%;
       height: 100%;
@@ -16,11 +16,11 @@
       align-items: center;
 
       @media (max-width: $tablet-mediaquery-width) {
-        content: url('../../icons/video-arrow/tablet.svg');
+        content: url('../../icons/video/arrow/tablet.svg');
       }
 
       @media (max-width: $mobile-mediaquery-width) {
-        content: url('../../icons/video-arrow/mobile.svg');
+        content: url('../../icons/video/arrow/mobile.svg');
       }
     }
 
@@ -42,6 +42,24 @@
       @media (max-width: $mobile-mediaquery-width) {
         height: 132px;
         border-radius: 21px;
+      }
+    }
+
+    &--red {
+      video {
+        border-radius: 15px;
+      }
+
+      &::after {
+        content: url('../../icons/video/arrow-red/desktop.svg');
+
+        @media (max-width: $tablet-mediaquery-width) {
+          content: url('../../icons/video/arrow-red/tablet.svg');
+        }
+
+        @media (max-width: $mobile-mediaquery-width) {
+          content: url('../../icons/video/arrow-ired/mobile.svg');
+        }
       }
     }
   }

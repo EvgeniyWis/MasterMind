@@ -39,6 +39,10 @@
   gap: 20px;
 }
 
+.max-width {
+  max-width: 100%;
+}
+
 .red-button {
   border-radius: 29px;
   background-color: var(--color-red);
