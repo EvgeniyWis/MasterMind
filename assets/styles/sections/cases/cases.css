@@ -1,0 +1,9 @@
+.cases__wrapper {
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(2, 0.5fr);
+  justify-content: space-between;
+  align-items: center;
+  gap: 100px;
+  margin-top: 177px;
+}/*# sourceMappingURL=cases.css.map */
