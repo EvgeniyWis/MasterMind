@@ -43,4 +43,23 @@
       }
     }
   }
+
+  &__showAll {
+    font-weight: 200;
+    font-size: 36px;
+    line-height: 105%;
+    text-decoration: underline;
+    text-decoration-skip-ink: none;
+    color: var(--color-white);
+    margin-top: 121px;
+    transition: text-shadow linear var(--transition-duration-default);
+
+    &:hover {
+      text-shadow: 0 0 20px var(--color-white);
+    }
+  }
+
+  &__button {
+    margin-top: 71px;
+  }
 }

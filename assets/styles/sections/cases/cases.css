@@ -37,4 +37,21 @@
 }
 .cases__item__more:hover {
   text-shadow: 0 0 20px var(--color-white);
+}
+.cases__showAll {
+  font-weight: 200;
+  font-size: 36px;
+  line-height: 105%;
+  text-decoration: underline;
+  -webkit-text-decoration-skip-ink: none;
+          text-decoration-skip-ink: none;
+  color: var(--color-white);
+  margin-top: 121px;
+  transition: text-shadow linear var(--transition-duration-default);
+}
+.cases__showAll:hover {
+  text-shadow: 0 0 20px var(--color-white);
+}
+.cases__button {
+  margin-top: 71px;
 }/*# sourceMappingURL=cases.css.map */

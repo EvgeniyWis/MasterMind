@@ -12,6 +12,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  opacity: 1;
+  transition: opacity var(--transition-duration-default) linear;
 }
 @media (max-width: 768px) {
   .video__wrapper::after {
@@ -24,7 +26,7 @@
   }
 }
 .video__wrapper__played::after {
-  display: none;
+  opacity: 0;
 }
 .video__wrapper video {
   height: 578px;

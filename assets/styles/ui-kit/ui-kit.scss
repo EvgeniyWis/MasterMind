@@ -52,7 +52,7 @@
 .red-button {
   border-radius: 29px;
   background-color: var(--color-red);
-  padding: 27px 40px;
+  padding: 27px 80px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -65,6 +65,10 @@
   transition-property: background-color, color, border-color;
   height: 83px;
   white-space: nowrap;
+
+  &--mediumPadding {
+    padding: 27px 40px;
+  }
 
   &:hover {
     background-color: var(--color-white);

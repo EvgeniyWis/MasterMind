@@ -14,6 +14,8 @@
       display: flex;
       justify-content: center;
       align-items: center;
+      opacity: 1;
+      transition: opacity var(--transition-duration-default) linear;
 
       @media (max-width: $tablet-mediaquery-width) {
         content: url('../../icons/video/arrow/tablet.svg');
@@ -26,7 +28,7 @@
 
     &__played {
       &::after {
-        display: none;
+        opacity: 0;
       }
     }
 
