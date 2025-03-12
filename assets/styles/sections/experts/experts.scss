@@ -4,9 +4,10 @@
   &__wrapper {
     margin-top: 85px;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 347px);
     justify-content: space-between;
     align-items: center;
+    gap: 125px;
   }
 
   &__item {
