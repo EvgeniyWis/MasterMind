@@ -32,6 +32,10 @@
   height: 578px;
   width: 100%;
   border-radius: 39px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center center;
+     object-position: center center;
 }
 @media (max-width: 768px) {
   .video__wrapper video {
@@ -50,13 +54,8 @@
 .video__wrapper--red::after {
   content: url("../../icons/video/arrow-red/desktop.svg");
 }
-@media (max-width: 768px) {
-  .video__wrapper--red::after {
-    content: url("../../icons/video/arrow-red/tablet.svg");
-  }
-}
 @media (max-width: 450px) {
   .video__wrapper--red::after {
-    content: url("../../icons/video/arrow-ired/mobile.svg");
+    content: url("../../icons/video/arrow-red/mobile.svg");
   }
 }/*# sourceMappingURL=video.css.map */

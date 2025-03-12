@@ -36,6 +36,8 @@
       height: 578px;
       width: 100%;
       border-radius: 39px;
+      object-fit: cover;
+      object-position: center center;
 
       @media (max-width: $tablet-mediaquery-width) {
         height: 324px;
@@ -55,12 +57,8 @@
       &::after {
         content: url('../../icons/video/arrow-red/desktop.svg');
 
-        @media (max-width: $tablet-mediaquery-width) {
-          content: url('../../icons/video/arrow-red/tablet.svg');
-        }
-
         @media (max-width: $mobile-mediaquery-width) {
-          content: url('../../icons/video/arrow-ired/mobile.svg');
+          content: url('../../icons/video/arrow-red/mobile.svg');
         }
       }
     }
