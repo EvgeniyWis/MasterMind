@@ -1,4 +1,64 @@
 @import '../../scssVars/mediaQueries';
 
 .experts {
+  &__wrapper {
+    margin-top: 85px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__item {
+    &__img {
+      border-radius: 22px;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center center;
+
+      &Wrapper {
+        border-radius: 22px;
+        width: 100%;
+        height: 100%;
+        background-color: var(--color-dark-gray);
+        padding: 18px;
+      }
+    }
+
+    &__name {
+      font-weight: 400;
+      font-size: 64px;
+      line-height: 105%;
+      text-align: center;
+      color: var(--color-white);
+    }
+
+    &__desc {
+      font-weight: 300;
+      font-size: 32px;
+      line-height: 105%;
+      text-align: center;
+      color: #fff;
+    }
+
+    &__casesLink {
+      border-radius: 22px;
+      width: 100%;
+      padding: 22px 0;
+      background-color: var(--color-dark-gray);
+      font-weight: 300;
+      font-size: 36px;
+      line-height: 105%;
+      color: var(--color-white);
+      position: relative;
+      margin-top: 25px;
+      box-shadow: 0 0 30px transparent;
+      transition: box-shadow linear var(--transition-duration-default);
+
+      &:hover {
+        box-shadow: 0 0 30px var(--color-white);
+      }
+    }
+  }
 }
