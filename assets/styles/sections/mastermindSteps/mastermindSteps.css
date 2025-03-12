@@ -1,22 +1,4 @@
 /* Media Queries */
-.mastermindSteps__caption {
-  font-weight: 500;
-  font-size: 100px;
-  line-height: 78%;
-  color: var(--color-white);
-  margin-top: 200px;
-}
-@media (max-width: 1400px) {
-  .mastermindSteps__caption {
-    font-size: 48px;
-    margin-top: 0;
-  }
-}
-@media (max-width: 768px) {
-  .mastermindSteps__caption {
-    font-size: 20px;
-  }
-}
 .mastermindSteps__wrapper {
   margin-top: 120px;
   width: 1150px;
@@ -45,21 +27,21 @@
   left: 11%;
   height: 100%;
   width: calc(100% - 200px);
-  background-image: url("../../images/mastermindStepsBG/desktop.svg");
+  background-image: url("../../../images/mastermindStepsBG/desktop.svg");
   background-repeat: no-repeat;
   background-size: cover;
   z-index: var(--z-index-bg);
 }
 @media (max-width: 1400px) {
   .mastermindSteps__wrapper::before {
-    background-image: url("../../images/mastermindStepsBG/laptop.svg");
+    background-image: url("../../../images/mastermindStepsBG/laptop.svg");
     width: calc(100% - 130px);
     top: -14%;
   }
 }
 @media (max-width: 768px) {
   .mastermindSteps__wrapper::before {
-    background-image: url("../../images/mastermindStepsBG/tablet.svg");
+    background-image: url("../../../images/mastermindStepsBG/tablet.svg");
     width: calc(100% + 50px);
     left: -20%;
   }

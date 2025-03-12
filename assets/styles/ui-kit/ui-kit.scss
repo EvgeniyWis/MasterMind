@@ -77,3 +77,21 @@
     font-size: 20px;
   }
 }
+
+.caption {
+  font-weight: 500;
+  font-size: 100px;
+  line-height: 78%;
+  color: var(--color-white);
+  margin-top: 150px;
+  text-align: center;
+
+  @media (max-width: $laptop-mediaquery-width) {
+    font-size: 48px;
+    margin-top: 0;
+  }
+
+  @media (max-width: $tablet-mediaquery-width) {
+    font-size: 20px;
+  }
+}
