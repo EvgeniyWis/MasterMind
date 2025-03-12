@@ -2,15 +2,9 @@
 
 .whoNeeds {
   margin-top: 140px;
-  margin-bottom: 169px;
 
   @media (max-width: $tablet-mediaquery-width) {
     margin-top: 0;
-    margin-bottom: 58px;
-  }
-
-  @media (max-width: $mobile-mediaquery-width) {
-    margin-bottom: 40px;
   }
 
   &__block {

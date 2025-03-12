@@ -7,6 +7,24 @@
   align-items: center;
   gap: 125px;
 }
+@media (max-width: 1400px) {
+  .experts__wrapper {
+    gap: 20px;
+    grid-template-columns: repeat(3, 219px);
+  }
+}
+@media (max-width: 768px) {
+  .experts__wrapper {
+    grid-template-columns: 100%;
+    margin-top: 30px;
+  }
+}
+@media (max-width: 450px) {
+  .experts__wrapper {
+    grid-template-columns: 219px;
+    justify-content: center;
+  }
+}
 .experts__item__img {
   border-radius: 22px;
   width: 100%;
@@ -23,6 +41,11 @@
   background-color: var(--color-dark-gray);
   padding: 18px;
 }
+@media (max-width: 1400px) {
+  .experts__item__imgWrapper {
+    padding: 11px;
+  }
+}
 .experts__item__name {
   font-weight: 400;
   font-size: 64px;
@@ -30,12 +53,22 @@
   text-align: center;
   color: var(--color-white);
 }
+@media (max-width: 1400px) {
+  .experts__item__name {
+    font-size: 40px;
+  }
+}
 .experts__item__desc {
   font-weight: 300;
   font-size: 32px;
   line-height: 105%;
   text-align: center;
   color: #fff;
+}
+@media (max-width: 1400px) {
+  .experts__item__desc {
+    font-size: 20px;
+  }
 }
 .experts__item__casesLink {
   border-radius: 22px;
@@ -53,4 +86,11 @@
 }
 .experts__item__casesLink:hover {
   box-shadow: 0 0 30px var(--color-white);
+}
+@media (max-width: 1400px) {
+  .experts__item__casesLink {
+    font-size: 24px;
+    margin-top: 20px;
+    padding: 14px 0;
+  }
 }/*# sourceMappingURL=experts.css.map */

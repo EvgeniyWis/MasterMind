@@ -1,17 +1,10 @@
 /* Media Queries */
 .whoNeeds {
   margin-top: 140px;
-  margin-bottom: 169px;
 }
 @media (max-width: 768px) {
   .whoNeeds {
     margin-top: 0;
-    margin-bottom: 58px;
-  }
-}
-@media (max-width: 450px) {
-  .whoNeeds {
-    margin-bottom: 40px;
   }
 }
 .whoNeeds__block {
