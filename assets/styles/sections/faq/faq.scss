@@ -28,6 +28,7 @@
         color: var(--color-white);
         text-align: center;
         height: 100%;
+        padding: 0;
 
         @media (max-width: $laptop-mediaquery-width) {
           font-size: 32px;
@@ -38,16 +39,18 @@
         }
 
         &::after {
-          content: url('../../../../assets/icons/accordion-plus.svg');
+          content: url('../../../../assets/icons/accordion-plus/desktop.svg');
           right: 0;
           left: 17px;
 
           @media (max-width: $laptop-mediaquery-width) {
             left: 8px;
+            content: url('../../../../assets/icons/accordion-plus/tablet.svg');
           }
 
           @media (max-width: $tablet-mediaquery-width) {
             left: 3px;
+            content: url('../../../../assets/icons/accordion-plus/mobile.svg');
           }
         }
       }
@@ -83,6 +86,7 @@
 
         @media (max-width: $tablet-mediaquery-width) {
           border-radius: 0 0 7px 7px;
+          top: -8px;
         }
 
         .ac-text {
@@ -107,7 +111,15 @@
 
       &.is-active {
         & > .ac-header .ac-trigger::after {
-          content: url('../../../../assets/icons/accordion-minus.svg');
+          content: url('../../../../assets/icons/accordion-minus/desktop.svg');
+
+          @media (max-width: $laptop-mediaquery-width) {
+            content: url('../../../../assets/icons/accordion-minus/tablet.svg');
+          }
+
+          @media (max-width: $tablet-mediaquery-width) {
+            content: url('../../../../assets/icons/accordion-minus/mobile.svg');
+          }
         }
 
         .ac-panel {
