@@ -1,0 +1,125 @@
+@import '../../scssVars/mediaQueries';
+
+.faq {
+  .accordion-container {
+    margin-top: 79px;
+    gap: 32px;
+
+    @media (max-width: $laptop-mediaquery-width) {
+      margin-top: 42px;
+      gap: 6px;
+    }
+
+    @media (max-width: $tablet-mediaquery-width) {
+      margin-top: 10px;
+      gap: 5px;
+    }
+
+    .ac {
+      transition: max-height var(--transition-duration-default) linear;
+      background-color: transparent;
+      border: none;
+
+      .ac-trigger {
+        font-family: var(--font-family);
+        font-weight: 500;
+        font-size: 40px;
+        line-height: 78%;
+        color: var(--color-white);
+        text-align: center;
+        height: 100%;
+
+        @media (max-width: $laptop-mediaquery-width) {
+          font-size: 32px;
+        }
+
+        @media (max-width: $tablet-mediaquery-width) {
+          font-size: 15px;
+        }
+
+        &::after {
+          content: url('../../../../assets/icons/accordion-plus.svg');
+          right: 0;
+          left: 17px;
+
+          @media (max-width: $laptop-mediaquery-width) {
+            left: 8px;
+          }
+
+          @media (max-width: $tablet-mediaquery-width) {
+            left: 3px;
+          }
+        }
+      }
+
+      .ac-header {
+        height: 83px;
+        border-radius: 29px;
+        background: var(--color-red);
+
+        @media (max-width: $laptop-mediaquery-width) {
+          height: 41px;
+          border-radius: 12px;
+        }
+
+        @media (max-width: $tablet-mediaquery-width) {
+          height: 22px;
+          border-radius: 7px;
+        }
+      }
+
+      .ac-panel {
+        border-radius: 0 0 29px 29px;
+        background: rgba(255 255 255 / 15%);
+        width: 100%;
+        transition: all var(--transition-duration-default) linear;
+        position: relative;
+        top: -20px;
+        z-index: var(--z-index-bg);
+
+        @media (max-width: $laptop-mediaquery-width) {
+          border-radius: 0 0 14px 14px;
+        }
+
+        @media (max-width: $tablet-mediaquery-width) {
+          border-radius: 0 0 7px 7px;
+        }
+
+        .ac-text {
+          font-family: var(--font-family);
+          font-weight: 500;
+          font-size: 40px;
+          line-height: 87%;
+          color: var(--color-white);
+          padding: 55px 17px;
+
+          @media (max-width: $laptop-mediaquery-width) {
+            font-size: 20px;
+            padding: 34px 8px;
+          }
+
+          @media (max-width: $tablet-mediaquery-width) {
+            font-size: 10px;
+            padding: 17px 3px;
+          }
+        }
+      }
+
+      &.is-active {
+        & > .ac-header .ac-trigger::after {
+          content: url('../../../../assets/icons/accordion-minus.svg');
+        }
+
+        .ac-panel {
+          @media (max-width: $laptop-mediaquery-width) {
+            border-radius: 14px;
+          }
+
+          @media (max-width: $tablet-mediaquery-width) {
+            border-radius: 7px;
+          }
+        }
+      }
+    }
+  }
+}
