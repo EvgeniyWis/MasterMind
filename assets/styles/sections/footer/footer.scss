@@ -1,0 +1,37 @@
+.footer {
+  margin-top: 213px;
+
+  &__rightsText {
+    font-family: var(--third-family);
+    font-weight: 200;
+    font-size: 12px;
+    line-height: 105%;
+    color: var(--color-white);
+  }
+
+  &__link {
+    font-weight: 300;
+    font-size: 28px;
+    line-height: 76%;
+    color: var(--color-white);
+  }
+
+  &__phoneNumber {
+    border-radius: 16px;
+    background-color: var(--color-red);
+    padding: 10px 20px;
+
+    &__text {
+      font-weight: 400;
+      font-size: 36px;
+      line-height: 78%;
+      color: var(--color-white);
+    }
+  }
+
+  &__whatsapp {
+    border-radius: 13px;
+    background-color: var(--color-red);
+    padding: 5px;
+  }
+}
