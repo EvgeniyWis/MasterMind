@@ -1,5 +1,19 @@
+/* Media Queries */
 .footer {
   margin-top: 213px;
+}
+@media (max-width: 1400px) {
+  .footer {
+    margin-top: 100px;
+    flex-direction: column;
+  }
+}
+.footer__logo {
+  width: 222px;
+  height: 100px;
+}
+.footer__logoWrapper {
+  order: -2;
 }
 .footer__rightsText {
   font-family: var(--third-family);
@@ -7,17 +21,64 @@
   font-size: 12px;
   line-height: 105%;
   color: var(--color-white);
+  opacity: 0.5;
+}
+@media (max-width: 768px) {
+  .footer__rightsText {
+    font-size: 10px;
+  }
 }
 .footer__link {
   font-weight: 300;
   font-size: 28px;
   line-height: 76%;
   color: var(--color-white);
+  position: relative;
+  width: -moz-fit-content;
+  width: fit-content;
+  white-space: nowrap;
+}
+@media (max-width: 1400px) {
+  .footer__link {
+    font-size: 20px;
+  }
+}
+.footer__link::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 1px;
+  background-color: var(--color-white);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transition: width var(--transition-duration-default) linear;
+}
+.footer__link:hover::after {
+  width: 100%;
+}
+@media (max-width: 1400px) {
+  .footer__contacts {
+    order: -1;
+    gap: 10px;
+    margin-top: 10px;
+  }
+}
+@media (max-width: 768px) {
+  .footer__contacts {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 .footer__phoneNumber {
   border-radius: 16px;
   background-color: var(--color-red);
   padding: 10px 20px;
+  box-shadow: 0 0 20px transparent;
+  transition: box-shadow var(--transition-duration-default) linear;
+}
+.footer__phoneNumber:hover {
+  box-shadow: 0 0 20px var(--color-red);
 }
 .footer__phoneNumber__text {
   font-weight: 400;
@@ -28,5 +89,40 @@
 .footer__whatsapp {
   border-radius: 13px;
   background-color: var(--color-red);
-  padding: 5px;
+  padding: 8px;
+  width: 50px;
+  height: 53px;
+  box-shadow: 0 0 20px transparent;
+  transition: box-shadow var(--transition-duration-default) linear;
+}
+.footer__whatsapp:hover {
+  box-shadow: 0 0 20px var(--color-red);
+}
+@media (max-width: 1400px) {
+  .footer__links {
+    flex-direction: row;
+  }
+}
+@media (max-width: 768px) {
+  .footer__links {
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+  }
+}
+.footer__linksWrapper {
+  gap: 120px;
+}
+@media (max-width: 1400px) {
+  .footer__linksWrapper {
+    gap: 10px;
+    margin-top: 55px;
+  }
+}
+@media (max-width: 768px) {
+  .footer__linksWrapper {
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+  }
 }/*# sourceMappingURL=footer.css.map */

@@ -950,27 +950,36 @@
       <!-- /FAQ/ -->
 
       <!-- Footer -->
-      <footer class="flex justify-between align-center max-width">
-        <div class="flex flex-column">
-          <img src="assets/images/logo.svg" alt="Логотип" />
+      <footer class="footer flex justify-between align-center max-width">
+        <div
+          class="footer__logoWrapper flex flex-column gap-5 align-center"
+          class="flex flex-column"
+        >
+          <img
+            class="footer__logo"
+            src="assets/images/logo.svg"
+            alt="Логотип"
+          />
 
           <span class="footer__rightsText">все права защищены © 2009-2024</span>
         </div>
 
         <!-- TODO: сделать якорные ссылки -->
-        <div class="flex flex-column">
-          <a href="#" class="footer__link">Кому необходим</a>
-          <a href="#" class="footer__link">Кейсы</a>
-          <a href="#" class="footer__link">Политика конфиденциальности</a>
+        <div class="footer__linksWrapper flex">
+          <div class="footer__links flex flex-column gap-20">
+            <a href="#" class="footer__link">Кому необходим</a>
+            <a href="#" class="footer__link">Кейсы</a>
+            <a href="#" class="footer__link">Политика конфиденциальности</a>
+          </div>
+
+          <div class="footer__links flex flex-column gap-20">
+            <a href="#" class="footer__link">Этапы проведения</a>
+            <a href="#" class="footer__link">Вопросы и ответы</a>
+            <a href="#" class="footer__link">Об экспертах</a>
+          </div>
         </div>
 
-        <div class="flex flex-column">
-          <a href="#" class="footer__link">Этапы проведения</a>
-          <a href="#" class="footer__link">Вопросы и ответы</a>
-          <a href="#" class="footer__link">Об экспертах</a>
-        </div>
-
-        <div class="flex align-center gap-20">
+        <div class="footer__contacts flex align-center gap-20">
           <a href="tel:+79202528007" class="footer__phoneNumber">
             <span class="footer__phoneNumber__text">+7 (920) 252 80 07</span>
           </a>
