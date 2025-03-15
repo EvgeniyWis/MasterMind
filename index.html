@@ -80,12 +80,13 @@
 
         <div id="header__menu" class="header__menu">
           <nav>
-            <!-- TODO: добавить скролл до нужных блоков-->
-            <a class="header__menu__item">Кому необходим</a>
-            <a class="header__menu__item">Этапы проведения</a>
-            <a class="header__menu__item">Об экспертах</a>
-            <a class="header__menu__item">Кейсы</a>
-            <a class="header__menu__item">Вопросы и ответы</a>
+            <a class="header__menu__item" href="#whoNeeds">Кому необходим</a>
+            <a class="header__menu__item" href="#masterMindSteps"
+              >Этапы проведения</a
+            >
+            <a class="header__menu__item" href="#experts">Об экспертах</a>
+            <a class="header__menu__item" href="#cases">Кейсы</a>
+            <a class="header__menu__item" href="#faq">Вопросы и ответы</a>
           </nav>
 
           <!-- TODO: заменить телефон на реальный (во всех кнопках с tel) -->
@@ -98,7 +99,7 @@
     <!-- Main -->
     <main>
       <!-- MainBlock -->
-      <section class="mainBlock">
+      <section id="mainBlock" class="mainBlock">
         <div class="mainBlock__wrapper">
           <div id="mainBlock__leftCol" class="mainBlock__leftCol">
             <div class="swiper-wrapper">
@@ -229,7 +230,7 @@
       <!-- /MainBlock/ -->
 
       <!-- WhoNeeds -->
-      <section class="whoNeeds">
+      <section id="whoNeeds" class="whoNeeds">
         <div class="whoNeeds__block flex flex-column align-center">
           <div
             class="whoNeeds__wrapper flex flex-column align-center"
@@ -355,7 +356,7 @@
       <!-- /WhoNeeds/ -->
 
       <!-- MasterMind Steps -->
-      <section class="flex flex-column align-center">
+      <section id="masterMindSteps" class="flex flex-column align-center">
         <h2 class="caption">Этапы проведения мастермайнда</h2>
 
         <div class="mastermindSteps__wrapper flex flex-column">
@@ -485,7 +486,7 @@
       <!-- /MasterMind Steps/ -->
 
       <!-- Experts -->
-      <section>
+      <section id="experts" class="flex flex-column align-center">
         <h2 class="caption">Об экспертах мастермайнда</h2>
 
         <div class="experts__wrapper">
@@ -685,7 +686,7 @@
       <!-- /Experts/ -->
 
       <!-- Cases -->
-      <section class="flex flex-column align-center justify-center">
+      <section id="cases" class="flex flex-column align-center justify-center">
         <h2 class="caption caption--large">Кейсы</h2>
 
         <div class="cases__wrapper max-width">
@@ -772,7 +773,7 @@
       <!-- /Cases/ -->
 
       <!-- FAQ -->
-      <section class="faq flex flex-column align-center">
+      <section id="faq" class="faq flex flex-column align-center">
         <h2 class="caption">Вопросы и ответы</h2>
 
         <div class="accordion-container max-width flex flex-column">
@@ -964,18 +965,19 @@
           <span class="footer__rightsText">все права защищены © 2009-2024</span>
         </div>
 
-        <!-- TODO: сделать якорные ссылки -->
         <div class="footer__linksWrapper flex">
           <div class="footer__links flex flex-column gap-20">
-            <a href="#" class="footer__link">Кому необходим</a>
-            <a href="#" class="footer__link">Кейсы</a>
-            <a href="#" class="footer__link">Политика конфиденциальности</a>
+            <a href="#whoNeeds" class="footer__link">Кому необходим</a>
+            <a href="#cases" class="footer__link">Кейсы</a>
+
+            <!-- TODO: добавить настоящую ссылку -->
+            <a href="" class="footer__link">Политика конфиденциальности</a>
           </div>
 
           <div class="footer__links flex flex-column gap-20">
-            <a href="#" class="footer__link">Этапы проведения</a>
-            <a href="#" class="footer__link">Вопросы и ответы</a>
-            <a href="#" class="footer__link">Об экспертах</a>
+            <a href="#masterMindSteps" class="footer__link">Этапы проведения</a>
+            <a href="#faq" class="footer__link">Вопросы и ответы</a>
+            <a href="#experts" class="footer__link">Об экспертах</a>
           </div>
         </div>
 
@@ -999,6 +1001,7 @@
     <!-- Scripts -->
     <script async src="assets/scripts/header.js"></script>
     <script async src="assets/scripts/video.js"></script>
+    <script async src="assets/scripts/anchorLinks.js"></script>
     <script
       defer
       src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"
