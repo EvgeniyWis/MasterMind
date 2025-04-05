@@ -4,7 +4,7 @@
   display: grid;
   grid-template-columns: repeat(3, 347px);
   justify-content: space-between;
-  align-items: center;
+  align-items: start;
   gap: 125px;
 }
 @media (max-width: 1400px) {
